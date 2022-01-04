@@ -16,4 +16,9 @@ public class SimpleInterestCalculator implements InterestCalculator {
         }
         return amount * year * rate;
     }
+
+    public double calculateWithError(double amount, double year) {
+
+        return year * rate / amount;
+    }
 }

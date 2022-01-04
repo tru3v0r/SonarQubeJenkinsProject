@@ -24,4 +24,10 @@ public class SimpleInterestCalculatorJUnit4Tests {
     public void testIllegalCalculate() {
         interestCalculator.calculate(-1000, 2);
     }
+
+    @Test
+    public void testCrashCalculate() {
+        double result = interestCalculator.calculate(0,2);
+        Assert.assertEquals(result,1000.0, 0);
+    }
 }
