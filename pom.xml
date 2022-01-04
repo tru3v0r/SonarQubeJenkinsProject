@@ -11,6 +11,8 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <sonar.java.pmd.reportPaths>./target/pmd.xml</sonar.java.pmd.reportPaths>
+        <sonar.java.checkstyle.reportPaths>./target/checkstyle-result.xml</sonar.java.checkstyle.reportPaths>
     </properties>
 <build>
     <plugins>
