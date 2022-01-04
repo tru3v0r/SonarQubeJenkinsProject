@@ -27,7 +27,7 @@ public class SimpleInterestCalculatorJUnit4Tests {
 
     @Test
     public void testCrashCalculate() {
-        double result = interestCalculator.calculate(0,2);
+        double result = interestCalculator.calculateWithError(0,2);
         Assert.assertEquals(result,1000.0, 0);
     }
 }
